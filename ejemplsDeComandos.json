@@ -1,0 +1,114 @@
+{
+	"CargarDocumentoAsociado": {
+		"NumeroLinea": "1",
+		"CodigoComprobante": "RemitoR",
+		"NumeroPos": "99998",
+		"NumeroComprobante": "00000876"
+	},
+	"CargarDatosCliente": {
+		"RazonSocial": "ELSIS SRL - Electrosistemas a medida",
+		"NumeroDocumento": "22222222226",
+		"ResponsabilidadIVA": "ResponsableInscripto",
+		"TipoDocumento": "TipoCUIT",
+		"Domicilio": "Avenida Julio Argentino Roca 852 - CABA"
+	},
+	"AbrirDocumento": {
+		"CodigoComprobante": "TiqueFacturaA"
+	},
+	"ImprimirTextoFiscal": {
+		"Atributos": [
+			"Centrado"
+		],
+		"Texto": "Producto en oferta: Sólo por hoy !",
+		"ModoDisplay": "DisplayNo"
+	},
+	"ImprimirItem":{
+		"ImprimirItem":
+        {
+            "Descripcion": "Cable miniplug 1.5",
+            "Cantidad": "1.0",
+            "PrecioUnitario": "200.00",
+            "CondicionIVA": "Gravado",
+            "AlicuotaIVA": "21.00",
+            "OperacionMonto": "ModoSumaMonto",
+            "TipoImpuestoInterno": "IIVariableKIVA",
+            "MagnitudImpuestoInterno": "0.00",
+            "ModoDisplay": "DisplayNo",
+            "ModoBaseTotal": "ModoPrecioTotal",
+            "UnidadReferencia": "20",
+            "CodigoProducto": "779123456789",
+            "CodigoInterno": "C1130",
+            "UnidadMedida": "Pack"
+        }
+ },
+	"ImprimirDescuentoItem": {
+		"Descripcion": "Super oferta semanal",
+		"Monto": "15.00",
+		"ModoDisplay": "DisplayNo",
+		"ModoBaseTotal": "ModoPrecioTotal"
+	},
+	"ImprimirAnticipoBonificacionEnvases": {
+		"Descripcion": "Recargo Financiero",
+		"Monto": "12.50",
+		"CondicionIVA": "Gravado",
+		"AlicuotaIVA": "21.00",
+		"TipoImpuestoInterno": "0",
+		"MagnitudImpuestoInterno": "0.00",
+		"ModoDisplay": "0",
+		"ModoBaseTotal": "ModoPrecioTotal",
+		"CodigoProducto": "7790001001047",
+		"Operacion": "R"
+	},
+	"ImprimirAjuste": {
+		"Descripcion": "Promoción Fidelidad",
+		"Monto": "18.00",
+		"ModoDisplay": "DisplayNo",
+		"ModoBaseTotal": "ModoPrecioTotal",
+		"CodigoProducto": "7790001001030",
+		"Operacion": "AjusteNeg"
+	},
+	"ImprimirOtrosTributos": {
+		"Codigo": "PercepcionImpuestosMunicipales",
+		"Descripcion": "Percepción municipal",
+		"BaseImponible": "50.00",
+		"Importe": "3.00"
+	},
+	"ImprimirPago": {
+		"Descripcion": "Tarjeta de Crédito",
+		"Monto": "200.00",
+		"Operacion": "Pagar",
+		"ModoDisplay": "DisplayNo",
+		"DescripcionAdicional": "Nro.: *******3245",
+		"CodigoFormaPago": "TarjetaDeCredito",
+		"Cuotas": "6",
+		"Cupones": "12345678",
+		"Referencia": "ABC123"
+	},
+	"CerrarDocumento": {
+		"Copias": "2",
+		"DireccionEMail": "cliente@suempresa.com.ar"
+	},
+	"ConsultarAcumuladosComprobante": {
+		"Estado": {
+			"Impresora": [],
+			"Fiscal": []
+		},
+		"Registro": "RegistroFinal"
+	},
+	"ContinuarConsultaAcumulados": {
+		"Estado": {
+			"Impresora": [],
+			"Fiscal": []
+		},
+		"Registro": "RegistroGlobal",
+		"DF_CantidadCancelados": "0",
+		"DF_CantidadEmitidos": "7",
+		"DF_Total": "7925.00",
+		"DF_TotalExento": "2118.70",
+		"DF_TotalNoGravado": "480.19",
+		"DF_TotalGravado": "3956.26",
+		"DF_TotalIVA": "813.92",
+		"DF_TotalTributos": "555.93",
+		"DNFH_Total": "0.00"
+	}
+}

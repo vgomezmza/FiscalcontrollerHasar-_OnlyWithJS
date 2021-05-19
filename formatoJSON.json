@@ -1,0 +1,17 @@
+[
+    {
+        "CargarDocumentoAsociado": {
+            "NumeroLinea": "1",
+            "CodigoComprobante": "RemitoR",
+            "NumeroPos": "99998",
+            "NumeroComprobante": "00000876"
+        },
+        "CargarDatosCliente": {
+            "RazonSocial": "ELSIS SRL - Electrosistemas a medida",
+            "NumeroDocumento": "22222222226",
+            "ResponsabilidadIVA": "ResponsableInscripto",
+            "TipoDocumento": "TipoCUIT",
+            "Domicilio": "Avenida Julio Argentino Roca 852 - CABA"
+        }
+    }
+]

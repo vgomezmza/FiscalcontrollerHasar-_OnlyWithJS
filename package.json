@@ -1,0 +1,18 @@
+{
+  "name": "curl_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "curl00.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "node curlFuncionMadre.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "fs-extra": "^10.0.0",
+    "node-libcurl": "^2.3.3"
+  }
+}
