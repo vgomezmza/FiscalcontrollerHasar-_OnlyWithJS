@@ -20,6 +20,7 @@ function Madre() {
     // AnularItem(1)
     // Cancelar();
     CrearCodigoQR("https://twitter.com/AugustoGSaa")
+    ConfigurarImpresoraFiscal()
 
 }
 const CargarDocumentoAsociado = (...CargarDocumentoAsociado) => {
@@ -256,6 +257,17 @@ const CrearCodigoQR = (URL) => {
     EnviarAControlador(doc)
 }
 
+const ConfigurarImpresoraFiscal =(Variable,valor) =>{
+    let doc ={
+    "ConfigurarImpresoraFiscal":
+    {
+    "Variable" : `${Variable}`,
+    "Valor" : `${valor}`
+    }
+   }
+   doc = JSON.stringify(doc)
+    EnviarAControlador(doc)
+}
 
 
 function EnviarAControlador(doc, path) {
