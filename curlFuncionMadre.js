@@ -9,16 +9,17 @@ function Madre() {
     // ImprimirItem("Cable miniplug 1.5", "1.0", "200.00", "Gravado", "21.00", "ModoSumaMonto", "IIVariableKIVA", "0.00", "DisplayNo", "ModoPrecioTotal", "20", "779123456789", "C1130", "Pack");
     // ImprimirItem("Cable miniplug 1.5", "1.0", "100.00", "Gravado", "21.00", "ModoSumaMonto", "IIVariableKIVA", "0.00", "DisplayNo", "ModoPrecioTotal", "20", "779123456789", "C1130", "Pack");
     // ImprimirItem("Cable miniplug 1.5", "1.0", "50.00", "Gravado", "21.00", "ModoSumaMonto", "IIVariableKIVA", "0.00", "DisplayNo", "ModoPrecioTotal", "20", "779123456789", "C1130", "Pack");
-    ImprimirDescuentoItem("Super oferta semanal","15.00","DisplayNo","ModoPrecioTotal");
-    ImprimirAnticipoBonificacionEnvases("Recargo Financiero","12.50","Gravado","21.00","0","0.00","0","ModoPrecioTotal","7790001001047","R");
-    ImprimirAjuste("Promoción Fidelidad","18.00","DisplayNo","ModoPrecioTotal","7790001001030","AjusteNeg");
-    ImprimirOtrosTributos("PercepcionImpuestosMunicipales","Percepción municipal","50.00","3.00");
-    ImprimirPago("Tarjeta de Crédito","200.00","Pagar","DisplayNo","Nro.: *******3245","TarjetaDeCredito","6","12345678","ABC123");
-    CerrarDocumento("0", "cliente@Acasamalo.com.ar");
+    // ImprimirDescuentoItem("Super oferta semanal","15.00","DisplayNo","ModoPrecioTotal");
+    // ImprimirAnticipoBonificacionEnvases("Recargo Financiero","12.50","Gravado","21.00","0","0.00","0","ModoPrecioTotal","7790001001047","R");
+    // ImprimirAjuste("Promoción Fidelidad","18.00","DisplayNo","ModoPrecioTotal","7790001001030","AjusteNeg");
+    // ImprimirOtrosTributos("PercepcionImpuestosMunicipales","Percepción municipal","50.00","3.00");
+    // ImprimirPago("Tarjeta de Crédito","200.00","Pagar","DisplayNo","Nro.: *******3245","TarjetaDeCredito","6","12345678","ABC123");
+    // CerrarDocumento("0", "cliente@Acasamalo.com.ar");
     // ConsultarAcumuladosComprobante();
     // ContinuarConsultaAcumulados();
     // AnularItem(1)
     // Cancelar();
+    CrearCodigoQR("https://twitter.com/AugustoGSaa")
 
 }
 const CargarDocumentoAsociado = (...CargarDocumentoAsociado) => {
@@ -242,6 +243,15 @@ const AnularItem = (Item) => {
         }
     }
 
+    doc = JSON.stringify(doc)
+    EnviarAControlador(doc)
+}
+
+
+const CrearCodigoQR = (URL) => {
+    let doc = {
+        "CrearCodigoQR": { "Informacion": "https://www.buenosaires.gob.ar/" }
+    }
     doc = JSON.stringify(doc)
     EnviarAControlador(doc)
 }
