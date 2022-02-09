@@ -49,3 +49,92 @@ curl.on('end', function (statusCode, body, headers) {
 
 curl.on('error', curl.close.bind(curl));
 curl.perform();
+
+
+
+let examp={
+    CargarDocumentoAsociado: {
+        NumeroLinea: "1",
+        CodigoComprobante: "RemitoR",
+        NumeroPos: "99998",
+        NumeroComprobante: "00000876",
+      },
+      CargarDatosCliente: {
+        RazonSocial: "0000",
+        NumeroDocumento: "",
+        ResponsabilidadIVA: "ResponsableInscripto",
+        TipoDocumento: "TipoCUIT",
+        Domicilio: "Avenida Julio Argentino Roca 852 - CABA",
+      },
+      AbrirDocumento: {
+        CodigoComprobante: "TiqueFacturaA",
+      },
+      ImprimirTextoFiscal: {
+        Atributos: ["Centrado"],
+        Texto: "Producto en oferta: Sólo por hoy !",
+        ModoDisplay: "DisplayNo",
+      },
+      ImprimirItem: {
+        Descripcion: "Cable miniplug 1.5",
+        Cantidad: "1.0",
+        PrecioUnitario: "200.00",
+        CondicionIVA: "Gravado",
+        AlicuotaIVA: "0.00",
+        OperacionMonto: "ModoSumaMonto",
+        TipoImpuestoInterno: "IIVariableKIVA",
+        MagnitudImpuestoInterno: "0.00",
+        ModoDisplay: "DisplayNo",
+        ModoBaseTotal: "ModoPrecioTotal",
+        UnidadReferencia: "1",
+        CodigoProducto: "779123456789",
+        CodigoInterno: "C1130",
+        UnidadMedida: "Unidad",
+      },
+      ImprimirDescuentoItem: {
+        Descripcion: "Super oferta semanal",
+        Monto: "15.00",
+        ModoDisplay: "DisplayNo",
+        ModoBaseTotal: "ModoPrecioTotal",
+      },
+      ImprimirAnticipoBonificacionEnvases: {
+        Descripcion: "Recargo Financiero",
+        Monto: "12.50",
+        CondicionIVA: "Gravado",
+        AlicuotaIVA: "21.00",
+        TipoImpuestoInterno: "0",
+        MagnitudImpuestoInterno: "0.00",
+        ModoDisplay: "0",
+        ModoBaseTotal: "ModoPrecioTotal",
+        CodigoProducto: "7790001001047",
+        Operacion: "R",
+      },
+      ImprimirAjuste: {
+        Descripcion: "Promoción Fidelidad",
+        Monto: "18.00",
+        ModoDisplay: "DisplayNo",
+        ModoBaseTotal: "ModoPrecioTotal",
+        CodigoProducto: "7790001001030",
+        Operacion: "AjusteNeg",
+      },
+      ImprimirOtrosTributos: {
+        Codigo: "PercepcionImpuestosMunicipales",
+        Descripcion: "Percepción municipal",
+        BaseImponible: "50.00",
+        Importe: "3.00",
+      },
+      ImprimirPago: {
+        Descripcion: "Tarjeta de Crédito",
+        Monto: "200.00",
+        Operacion: "Pagar",
+        ModoDisplay: "DisplayNo",
+        DescripcionAdicional: "Nro.: *******3245",
+        CodigoFormaPago: "TarjetaDeCredito",
+        Cuotas: "6",
+        Cupones: "12345678",
+        Referencia: "ABC123",
+      },
+      CerrarDocumento: {
+        Copias: "1",
+        DireccionEMail: "cliente@Acasamalo.com.ar",
+      },
+}
